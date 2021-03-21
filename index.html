@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Genius</title>
+</head>
+<body>
+
+    <div class="hero">
+
+        <div class="form-box">
+
+            <!-- button for login and register -->
+
+            <div class="button-box">
+                <div id="btn" class="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+            </div>
+            
+            <!-- end of button for login and register -->
+
+            <!-- social icons -->
+
+            <div class="social-icons">
+                <img src="/images/fb.png" alt="fb">
+                <img src="/images/gp.png" alt="gp">
+            </div>
+
+            <!-- end of social icons -->
+
+            <!-- Login Input forms -->
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username / Email" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+
+            <!-- end of Login Input-->
+
+            <!-- Register input form -->
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+            <!-- end of Register input form -->
+
+        </div>
+    </div>
+    
+
+    <script>
+        let loginBtn = document.getElementById("login");
+        let registerBtn = document.getElementById("register");
+        let btnColrer = document.getElementById("btn");
+
+        function register(){
+            loginBtn.style.left = "-400px";
+            registerBtn.style.left = "10px";
+            btnColrer.style.left = "110px";
+        }
+        function login(){
+            loginBtn.style.left = "10px";
+            registerBtn.style.left = "-400px";
+            btnColrer.style.left = "0px";
+        }
+
+    
+
+    </script>
+</body>
+</html>

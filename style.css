@@ -1,0 +1,122 @@
+*{
+    margin :0;
+    padding:0;
+}
+
+/* background image */
+.hero{
+    height: 100%;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),
+     rgba(0,0,0,0.4)), url(/images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+/* Background for all views*/
+.form-box{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    margin:6%auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* end of Background for all views*/
+
+/* login and signup button styles */
+.button-box{
+    width : 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: relative;
+    
+}
+
+.btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    transition: 2s;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 1s;
+}
+/* end oflogin and signup button styles */
+
+/* social icons */
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    object-fit: cover;
+}
+/* end of social icons */
+
+/* input field form */
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transform: 1s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1.9px solid #ffad06;
+    align-items: center;
+    text-align: center;
+    outline: none;
+}
+
+/* end of input field form */
+
+/* login submitbtn */
+
+.submit-btn{
+    margin-top:30px;
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 2s;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 1s;
+    border:none;
+    margin-left: 25px;
+    
+
+
+}
+
+/* end odlogin submitbtn */
+
+#login{
+    left: 9px;
+}
+
+#register{
+    left: 450px;
+}
